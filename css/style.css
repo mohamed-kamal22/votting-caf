@@ -22,7 +22,7 @@ header .title
     position: absolute;
     top: 50%;
     left: -390px;
-    /* right: -700px; */
+    /* right: 500px; */
     font-size: 40px;
     font-weight: bold;
     color: #FFC107;
@@ -214,7 +214,93 @@ input:checked + .slider:before {
 }
 
 
-@media (max-width:575px)
+@media (max-width:375px)
+{
+    header .title
+    {
+        position: unset;
+        top: 0%;
+        right: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFC107;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+
+    ul li img
+    {
+        width: 55px;
+        height: 55px;
+    }
+
+    .nation
+    {
+        float: left;
+        margin-left: 33px;
+        margin-top: 7px;
+    }
+
+    ul li .nation label
+    {
+        font-size: 1rem;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+
+    ul li .nation p
+    {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: .6rem;
+    }
+
+    .user
+    {
+        margin-left: 15px;
+    }
+
+    header .head .user label
+    {
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+
+    header .head .user p
+    {
+        margin-left: 0px;
+        font-size: 15px;
+        color: #747474;
+    }
+
+    .col-md-9
+    {
+        text-align: center;
+    }
+
+    header .vote
+    {
+        margin-top: 20px;
+    }
+
+    .rank
+    {
+        margin-top: 35%;
+        width: 85%;
+    }
+
+    .switch 
+    {
+        margin-top: 12px;
+    }
+}
+
+@media (min-width:376px) and (max-width: 575px)
 {
     header .title
     {
