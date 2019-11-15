@@ -242,13 +242,13 @@ input:checked + .slider:before {
     .nation
     {
         float: left;
-        margin-left: 24px;
+        margin-left: 33px;
         margin-top: 7px;
     }
 
     ul li .nation label
     {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 0px;
         font-weight: bold;
     }
@@ -291,6 +291,7 @@ input:checked + .slider:before {
     .rank
     {
         margin-top: 27%;
+        width: 85%;
     }
 
     .switch 
