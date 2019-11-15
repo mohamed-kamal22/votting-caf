@@ -1,0 +1,300 @@
+body
+{
+    background-color: #000;
+}
+
+*
+{
+    color: #fff;
+}
+
+header
+{
+    position: relative;
+    background-image: url(../img/header.png);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header .title
+{
+    position: absolute;
+    top: 50%;
+    left: -390px;
+    /* right: -700px; */
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFC107;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+}
+
+header .head 
+{
+    overflow: hidden;
+}
+
+header .head .logo img
+{
+    width: 100%;
+}
+
+header .head .user label
+{
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+header .head .user p
+{
+    margin-bottom: 0px;
+    /* margin-left: 25px; */
+    font-size: 20px;
+    color: #747474;
+    text-transform: capitalize;
+}
+
+header .vote
+{
+    margin-top: 30px;
+}
+
+
+button
+{
+    padding: 5px 40px;
+    background: #000;
+    color: #fff;
+    outline: none;
+    border: 1px solid #FFF;
+    margin-top: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+ul
+{
+    padding-left: 0px;
+}
+
+ul li
+{
+    list-style: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #262A2B;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #000;
+}
+
+ul li .nation label
+{
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+ul li .nation p
+{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.nation
+{
+    float: left;
+    margin-left: 24px;
+    margin-top: 19px;
+}
+
+ul li img
+{
+    border-radius: 100%;
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin: 5px 0 5px 5px;
+}
+
+.name
+{
+    text-align: right;
+}
+
+.name label
+{
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.switch 
+{
+    position: relative;
+    width: 60px;
+    height: 34px;
+    float :right;
+    margin: 20px 10px 0 0;
+}
+
+.rank
+{
+    margin-top: 25%;
+    width: 60%;
+    background: #CCCCCC;
+    border: unset;
+    border-radius: 5px;
+    color: #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+  
+/* The slider */
+.slider 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before 
+{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+input.warning:checked + .slider 
+{
+    background-color: #FFC107;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round 
+{
+    border-radius: 34px;
+}
+
+.slider.round:before
+{
+    border-radius: 50%;
+}
+
+
+@media (max-width:575px)
+{
+    header .title
+    {
+        position: unset;
+        top: 0%;
+        right: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFC107;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        transform: unset;
+        -webkit-transform: unset;
+        -moz-transform: unset;
+        -ms-transform: unset;
+        -o-transform: unset;
+    }
+
+    ul li img
+    {
+        width: 55px;
+        height: 55px;
+    }
+
+    .nation
+    {
+        float: left;
+        margin-left: 24px;
+        margin-top: 7px;
+    }
+
+    ul li .nation label
+    {
+        font-size: 1.2rem;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+
+    ul li .nation p
+    {
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: .6rem;
+    }
+
+    .user
+    {
+        margin-left: 15px;
+    }
+
+    header .head .user label
+    {
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+
+    header .head .user p
+    {
+        margin-left: 0px;
+        font-size: 15px;
+        color: #747474;
+    }
+
+    .col-md-9
+    {
+        text-align: center;
+    }
+
+    header .vote
+    {
+        margin-top: 20px;
+    }
+
+    .rank
+    {
+        margin-top: 27%;
+    }
+
+    .switch 
+    {
+        margin-top: 12px;
+    }
+}
