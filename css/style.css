@@ -221,10 +221,10 @@ input:checked + .slider:before {
         position: unset;
         top: 0%;
         right: 0px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color: #FFC107;
-        margin-top: 0px;
+        margin-top: 30px;
         margin-bottom: 0px;
         transform: unset;
         -webkit-transform: unset;
